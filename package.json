@@ -1,0 +1,33 @@
+{
+  "name": "taarangana-event-platform",
+  "version": "1.0.0",
+  "description": "IGDTUW Taarangana 2026 registration, digital pass and QR entry platform",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --no-warnings server/index.js",
+    "dev": "node --no-warnings --watch server/index.js",
+    "seed": "node --no-warnings server/seed.js",
+    "seed:demo": "node --no-warnings server/seed.js --demo",
+    "test": "node --no-warnings --test tests/platform.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyushtiwari14/igdtuw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piyushtiwari14/igdtuw/issues"
+  },
+  "homepage": "https://github.com/piyushtiwari14/igdtuw#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "jsqr": "^1.4.0",
+    "multer": "^2.4.0",
+    "qrcode": "^1.5.4"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.5"
+  }
+}

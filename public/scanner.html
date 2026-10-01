@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Entry scanner · Taarangana 2026 · IGDTUW</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/css/app.css"></head>
+<body class="scanner">
+<div class="scan-top"><div class="emblem" aria-hidden="true">IGDTUW<br>EMBLEM</div><div class="t"><small>Indira Gandhi Delhi Technical University for Women</small>TAARANGANA 2026</div><span class="daybadge" id="day" hidden></span></div>
+
+<section id="login" class="login-card" hidden>
+  <h2>Volunteer sign in</h2><div id="lerr" role="alert"></div>
+  <form id="lform"><div class="field"><label for="u">Username</label><input class="input" id="u" autocomplete="username" autocapitalize="none" required></div>
+  <div class="field"><label for="p">Password</label><input class="input" id="p" type="password" autocomplete="current-password" required></div>
+  <button class="btn btn-primary" style="width:100%" type="submit">Sign in</button></form>
+</section>
+
+<section id="app" hidden style="display:none;flex:1;flex-direction:column">
+  <div class="viewport"><video id="video" playsinline muted></video><div class="reticle" aria-hidden="true"></div>
+    <p class="help" id="help">Align the participant QR inside the box</p></div>
+  <div id="camerr" style="display:none;padding:14px;background:#fff;color:var(--text)" role="alert"></div>
+  <form class="manual" id="manual"><label class="sr-only" for="mtoken">Enter token manually</label><input class="input" id="mtoken" placeholder="Camera not working? Paste QR link / token" autocomplete="off"><button class="btn btn-dark" type="submit">Verify</button></form>
+  <div class="scan-foot"><span><span class="dot" id="netdot"></span>Network: <b id="net">ONLINE</b></span><span class="sp">Volunteer: <b id="vname"></b></span><button class="btn btn-secondary btn-sm" id="logout">Sign out</button></div>
+</section>
+
+<div class="result" id="result" role="alertdialog" aria-modal="true" aria-labelledby="rtitle" tabindex="-1">
+  <div class="ico" id="ricon" aria-hidden="true"></div><h2 id="rtitle"></h2>
+  <img class="photo" id="rphoto" alt="" hidden><div class="pname" id="rname"></div><div class="detail" id="rdetail"></div>
+  <button class="btn" id="rnext">Scan next</button>
+</div>
+<script src="/js/common.js"></script><script src="/vendor/jsqr.js"></script><script src="/js/scanner.js"></script>
+</body></html>

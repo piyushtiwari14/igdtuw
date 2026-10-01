@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entry pass · Taarangana 2026 · IGDTUW</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/css/app.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="in"><div class="emblem" aria-hidden="true">IGDTUW<br>EMBLEM</div><a class="brand" href="/"><small>Indira Gandhi Delhi Technical University for Women</small><strong>TAARANGANA 2026</strong></a><nav><a class="btn btn-link" href="/register">Register</a></nav></div></header>
+<main id="main" class="page">
+<section id="lookup" class="card" hidden><h2>Download your entry pass</h2><p class="muted">Enter your Registration ID and the email or mobile number you registered with.</p><div id="lerr" role="alert"></div>
+<form id="lform" novalidate><div class="field"><label for="rid">Registration ID</label><input class="input" id="rid" placeholder="TAR26-0000000" autocapitalize="characters" autocomplete="off" required></div>
+<div class="field"><label for="contact">Email or mobile number</label><input class="input" id="contact" autocomplete="off" required></div><button class="btn btn-primary" type="submit">Show my pass</button></form></section>
+<section id="passview" hidden><div id="newmsg" class="alert ok no-print" hidden>Registration complete. Save or print this pass — you will need the QR code at the gate on both days.</div>
+<div class="pass" id="pass"><header><div class="emblem" aria-hidden="true">IGDTUW<br>EMBLEM</div><div class="t"><small>Indira Gandhi Delhi Technical University for Women</small><b>TAARANGANA 2026</b></div></header>
+<div class="body"><div class="qr" id="qr" role="img" aria-label="Entry QR code"></div><div class="name" id="pname"></div><div class="rid" id="prid"></div><div><span class="badge" id="pstat"></span></div>
+<div class="days2"><div>DAY 1 · 22 OCT</div><div>DAY 2 · 23 OCT</div></div><div class="meta">IGDTUW, Kashmere Gate, Delhi-110006</div>
+<ul><li>Show this QR at the gate. One entry per day.</li><li>Carry your institute ID. The same pass is valid on Day 2.</li><li>Do not share this pass: the QR admits one person per day.</li></ul></div></div>
+<div class="row-actions no-print" style="justify-content:center;margin-top:18px"><button class="btn btn-primary" id="print">Print / Save as PDF</button><button class="btn btn-secondary" id="dlqr">Download QR image</button><a class="btn btn-link" href="/pass" id="other">Look up another pass</a></div></section></main>
+<footer class="site">Indira Gandhi Delhi Technical University for Women · Kashmere Gate, Delhi-110006</footer>
+<script src="/js/common.js"></script><script src="/js/pass.js"></script>
+</body></html>

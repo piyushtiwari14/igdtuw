@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register · Taarangana 2026 · IGDTUW</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/css/app.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="in"><div class="emblem" aria-hidden="true">IGDTUW<br>EMBLEM</div><a class="brand" href="/"><small>Indira Gandhi Delhi Technical University for Women</small><strong>TAARANGANA 2026</strong></a><nav><a class="btn btn-link" href="/pass">Download entry pass</a></nav></div></header>
+<main id="main" class="page"><div class="card">
+<h2>Register for Taarangana 2026</h2><p class="muted">One registration covers both days (22 &amp; 23 October). Fields marked <span class="req">*</span> are required.</p>
+<div id="banner" role="alert"></div>
+<ol class="steps-ind" id="ind" aria-label="Registration steps"><li>1 · Personal</li><li>2 · Contact</li><li>3 · Documents</li></ol>
+<form id="form" novalidate autocomplete="on">
+<fieldset data-step="0" style="border:0;padding:0;margin:0"><legend class="sr-only">Personal details</legend>
+<div class="field"><label for="fullName">Full name <span class="req">*</span></label><input class="input" id="fullName" name="fullName" autocomplete="name" maxlength="100" required><div class="err" hidden></div></div>
+<div class="cols2"><div class="field"><label for="gender">Gender <span class="req">*</span></label><select class="input" id="gender" name="gender" required></select><div class="err" hidden></div></div>
+<div class="field"><label for="dateOfBirth">Date of birth <span class="req">*</span></label><input class="input" id="dateOfBirth" name="dateOfBirth" type="date" autocomplete="bday" required><div class="err" hidden></div></div></div></fieldset>
+<fieldset data-step="1" hidden style="border:0;padding:0;margin:0"><legend class="sr-only">Contact details</legend>
+<div class="field"><label for="email">Email <span class="req">*</span></label><input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required><div class="hint">Your pass can be retrieved later using this email or your phone number.</div><div class="err" hidden></div></div>
+<div class="field"><label for="phone">Mobile number <span class="req">*</span></label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" placeholder="10-digit Indian mobile" required><div class="err" hidden></div></div></fieldset>
+<fieldset data-step="2" hidden style="border:0;padding:0;margin:0"><legend class="sr-only">Documents and consent</legend>
+<div class="upload-req"><strong>Before you upload</strong><ul><li><b>Photograph</b>: JPG, PNG or WebP, up to 3 MB. Clear, face visible.</li><li><b>Institute ID</b>: JPG, PNG, WebP or PDF, up to 5 MB.</li><li><b>Government ID</b>: masked Aadhaar, Election ID or other valid government photo ID. JPG, PNG, WebP or PDF, up to 5 MB.</li></ul></div>
+<div class="field"><label for="photo">Photograph <span class="req">*</span></label><input class="input" id="photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required><div class="err" hidden></div></div>
+<div class="field"><label for="instituteId">Institute ID <span class="req">*</span></label><input class="input" id="instituteId" name="instituteId" type="file" accept="image/jpeg,image/png,image/webp,application/pdf" required><div class="err" hidden></div></div>
+<div class="field"><label for="governmentIdType">Government ID type <span class="req">*</span></label><select class="input" id="governmentIdType" name="governmentIdType" required></select><div class="err" hidden></div></div>
+<div class="field"><label for="governmentId">Government ID <span class="req">*</span></label><input class="input" id="governmentId" name="governmentId" type="file" accept="image/jpeg,image/png,image/webp,application/pdf" required><div class="hint">Do not upload an unmasked Aadhaar number.</div><div class="err" hidden></div></div>
+<div class="field"><label class="checkbox"><input type="checkbox" id="consent" name="consent"><span>I confirm the details are correct and I consent to IGDTUW processing my information and identity documents for Taarangana 2026 entry management. <em class="muted">[Final privacy notice wording to be supplied by IGDTUW.]</em> <span class="req">*</span></span></label><div class="err" hidden></div></div></fieldset>
+<div class="row-actions"><button type="button" class="btn btn-secondary" id="back" hidden>← Back</button><span></span><button type="button" class="btn btn-primary" id="next">Continue →</button><button type="submit" class="btn btn-primary" id="submit" hidden>Submit registration</button></div>
+</form></div></main>
+<script src="/js/common.js"></script><script src="/js/register.js"></script>
+</body></html>
